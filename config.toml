@@ -1,4 +1,4 @@
-baseURL = "http://betterflutter.com/"
+baseURL = "https://sainoba.github.io/better-flutter/"
 languageCode = "en-us"
 title = "Better Flutter"
 theme = "ananke"

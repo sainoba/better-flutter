@@ -1,0 +1,4 @@
+baseURL = "http://betterflutter.com/"
+languageCode = "en-us"
+title = "Better Flutter"
+theme = "ananke"

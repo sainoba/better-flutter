@@ -12,13 +12,13 @@
     
     
     <item>
-      <title>My First Post</title>
+      <title>My First Post :)</title>
       <link>https://betterflutter.com/posts/my-first-post/</link>
       <pubDate>Thu, 13 Jun 2019 01:01:43 +0000</pubDate>
       
       <guid>https://betterflutter.com/posts/my-first-post/</guid>
-      <description>Hellow World !!!
- 1  print(&amp;#39;Hello world!&amp;#39;);    :)</description>
+      <description>Hellow World!
+1  print(&amp;#39;Hello world!&amp;#39;);   </description>
     </item>
     
   </channel>

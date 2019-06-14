@@ -2,11 +2,12 @@
 language: minimal
 
 # Install Hugo
-before_install:
-  - sudo apt-get install -y hugo
-addons:
-  apt:
-    update: true
+install:
+  - url=$(curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | sed -r -n '/browser_download_url/{/Linux-64bit.deb/{s@[^:]*:[[:space:]]*"([^"]*)".*@\1@g;p;q}}')
+  - echo $url
+  - curl -OLkSs $url
+  - sudo dpkg -i hugo*.deb
+  - ls themes
 
 script:
   - hugo

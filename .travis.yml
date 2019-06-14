@@ -7,7 +7,7 @@ install:
   - echo $url
   - curl -OLkSs $url
   - sudo dpkg -i hugo*.deb
-  - ls
+  - ls content
 
 script:
   - hugo

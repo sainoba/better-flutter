@@ -1,0 +1,7 @@
+baseURL = "https://betterflutter.com/"
+languageCode = "en-us"
+title = "Better Flutter"
+# theme = "ananke"
+theme = "sodium"
+# publishDir= "docs"
+# publishDir= "public" # default

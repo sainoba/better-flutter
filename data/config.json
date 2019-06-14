@@ -1,0 +1,11 @@
+{
+  "components" : [
+    "cover",
+    "blog",
+    "features",
+    "pricing",
+    "team",
+    "contact"
+  ],
+  "email" : "xxxxxxx@gmail.com"
+}

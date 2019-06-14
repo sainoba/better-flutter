@@ -2,6 +2,18 @@ baseURL = "https://betterflutter.com/"
 languageCode = "en-us"
 title = "Better Flutter"
 # theme = "ananke"
-theme = "sodium"
+# theme = "sodium"
+theme = "bilberry-hugo-theme"
 # publishDir= "docs"
 # publishDir= "public" # default
+
+# Enable / Disable algolia search
+algolia_search    = true
+algolia_appId     = "T728HSE18I"
+algolia_apiKey    = "add585bfa2f94f7b058a122a9453bb67"
+algolia_indexName = "prod_BetterFlutter"
+# Set this option to false if you want to search within all articles in all languages at once
+algolia_currentLanguageOnly = true
+
+# Enable / Disable comments on the articles via Disqus.
+disqusShortname = "better-flutter"

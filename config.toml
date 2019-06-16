@@ -3,6 +3,8 @@ languageCode = "en-us"
 title = "Better Flutter"
 enableRobotsTXT = true
 
+disableKinds = ["taxonomy", "taxonomyTerm", "404"]
+
 # theme
 theme = "gohugo-amp"
 # theme = "aether"

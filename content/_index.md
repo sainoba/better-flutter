@@ -9,7 +9,7 @@ index = true
   changefreq = "daily"
   priority = 1.0
   filename = "sitemap.xml"
-  
+
 +++
 
 {{% amp-image src="/logo.png" srcset="/logo-large.png 1000w, /logo.png 200w" height="450" width="450" layout="responsive" alt="gohugo-amp-theme" attribution="gohugohq.com" %}}

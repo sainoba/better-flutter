@@ -1,0 +1,25 @@
+{{ partial "structure/head.html" . }}
+{{ partial "header.html" . }}
+
+
+{{ $paginator := .Paginate (where .Data.Pages.ByTitle "Section" "shortcodes") 5 }}
+
+<main>
+    {{ partial "navigation/breadcrumbs.html" . }}
+
+    <h1>Shortcodes &amp; Partials</h1>
+
+    <ul>
+        {{ range $paginator.Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+    </ul>
+
+    {{ partial "navigation/pagination.html" . }}
+
+    <blockquote>There is still a lot of work in progress here. Have a look at the <a href="/kitchen-sink">kitchen sink listing all elements</a></blockquote>
+
+</main>
+
+{{ partial "custom/footer.html" . }}
+{{ partial "structure/foot.html" . }}

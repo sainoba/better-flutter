@@ -1,0 +1,10 @@
+{{ partial "structure/head.html" . }}
+{{ partial "header.html" . }}
+
+<main>
+    {{ partial "navigation/breadcrumbs.html" . }}
+    {{ .Content }}
+</main>
+
+{{ partial "custom/footer.html" . }}
+{{ partial "structure/foot.html" . }}

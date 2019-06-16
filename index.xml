@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Better Flutter</title>
+    <title>gohugohq. - your gohugo guide on Better Flutter</title>
     <link>https://betterflutter.com/</link>
-    <description>Recent content on Better Flutter</description>
+    <description>Recent content in gohugohq. - your gohugo guide on Better Flutter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Oct 2016 19:28:41 +0200</lastBuildDate>
@@ -12,14 +12,44 @@
     
     
     <item>
-      <title>gohugohq. - your gohugo guide</title>
-      <link>https://betterflutter.com/index.html</link>
+      <title>My First Post :)</title>
+      <link>https://betterflutter.com/posts/my-first-post/</link>
+      <pubDate>Thu, 13 Jun 2019 01:01:43 +0000</pubDate>
+      
+      <guid>https://betterflutter.com/posts/my-first-post/</guid>
+      <description>Hellow World!
+1 2  // Hi print(&amp;#39;Hello world!&amp;#39;);   </description>
+    </item>
+    
+    <item>
+      <title>My Second Post :)</title>
+      <link>https://betterflutter.com/blog/my-first-post/</link>
+      <pubDate>Thu, 13 Jun 2019 01:01:43 +0000</pubDate>
+      
+      <guid>https://betterflutter.com/blog/my-first-post/</guid>
+      <description>Hello Second!!
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70  package main import ( &amp;#34;fmt&amp;#34; &amp;#34;math/rand&amp;#34; &amp;#34;time&amp;#34; ) type Moo struct { Cow int Sound string Tube chan bool } // A cow will moo until it is being milked func cow(num int, mootube chan Moo) { tube := make(chan bool) for { select { case mootube &amp;lt;- Moo{num, &amp;#34;moo&amp;#34;, tube}: fmt.</description>
+    </item>
+    
+    <item>
+      <title>kitchen sink</title>
+      <link>https://betterflutter.com/kitchen-sink/</link>
+      <pubDate>Sun, 06 Nov 2016 21:05:25 +0100</pubDate>
+      
+      <guid>https://betterflutter.com/kitchen-sink/</guid>
+      <description>Kitchen sink A kitchen-sink is a showcase and test-page for all available elements.
+Second Header Lorem ipsum dolor sit amet, Kitchen Sink with AMP Elements consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</description>
+    </item>
+    
+    <item>
+      <title>getting started</title>
+      <link>https://betterflutter.com/install/</link>
       <pubDate>Sun, 16 Oct 2016 19:28:41 +0200</pubDate>
       
-      <guid>https://betterflutter.com/index.html</guid>
-      <description>&amp;lt;amp-img src=&amp;ldquo;/logo.png&amp;rdquo; alt=&amp;ldquo;gohugo-amp-theme &amp;ldquo; attribution=&amp;ldquo;gohugohq.com &amp;ldquo; srcset=&amp;ldquo;/logo-large.png 1000w, /logo.png 200w &amp;ldquo;
-width=&amp;quot;450&amp;quot; height=&amp;quot;450&amp;quot; layout=&amp;quot;responsive&amp;quot;&amp;gt;  
-This Hugo theme is supposed to be a starter theme to make it easy to adapt to Google&amp;rsquo;s AMP-Project. Included in the theme are 40+ shortcodes and partials and automatic Structured Data making it a pleasure to embed AMP-Elements within your content files or your template.</description>
+      <guid>https://betterflutter.com/install/</guid>
+      <description>getting started with gohugo-amps This Hugo theme is supposed to be a starter theme to make it easy to adapt to Google&amp;rsquo;s AMP-Project. Included in the theme are 40+ shortcodes and partials making it a pleasure to embed AMP-Elements within your content files or your template.
+Installation Go to the directory where you have your Hugo site and run:
+$ mkdir themes $ cd themes $ git clone https://github.com/wildhaber/gohugo-amp.git $ rm -rf gohugo-amp/.</description>
     </item>
     
   </channel>

@@ -2,8 +2,9 @@ baseURL = "https://betterflutter.com/"
 languageCode = "en-us"
 title = "Better Flutter"
 # theme = "ananke"
-# theme = "sodium"
-theme = "bilberry-hugo-theme"
+theme = "sodium"
+# theme = "bilberry-hugo-theme"
+
 # publishDir= "docs"
 # publishDir= "public" # default
 

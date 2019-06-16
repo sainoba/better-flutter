@@ -1,0 +1,538 @@
+$light : #ffffff;
+$dark : #112233;
+$gutter : 30px;
+$base-font-size: 14px;
+$accent-color: #ff1d55;
+$accent-serious: #0379C4;
+$very-light: #f7f7f7;
+$boring-grey: #696969;
+
+body {
+  background-color: $light;
+  color: $dark;
+  font-size: $base-font-size;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+}
+
+main {
+  max-width: 1180px;
+  padding: $gutter;
+  margin: 0 auto;
+
+  h1 + p {
+    @media (min-width: 900px) {
+      font-size: 2em;
+    }
+  }
+
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 3em;
+  line-height: 1.4em;
+  margin: 0.5em 0;
+  font-family: Georgia, serif;
+  transition: color 0.4s;
+}
+
+h2 { font-weight: 300; font-size: 2em; margin: $gutter 0; }
+h3 { font-weight: 300; font-size: 1.8em; margin: $gutter 0; }
+h4 { font-weight: 300; font-size: 1.6em; }
+h5 { font-weight: 300; font-size: 1.2em; }
+h6 { font-weight: 300; font-size: 1em; }
+
+p {
+  line-height: 1.4em;
+  font-size: 1.2em;
+  margin: $gutter / 2 0;
+}
+
+blockquote {
+  border-left: 5px solid $accent-color;
+  background-color: lighten($accent-color, 40);
+
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.lightbox {
+  background-color: rgba($accent-serious, 0.4);
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: $gutter;
+}
+
+code {
+
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+
+  p > & {
+    color: $accent-color;
+  }
+
+  pre & {
+    display: block;
+    background-color: $very-light;
+    padding: $gutter / 2;
+    overflow: auto;
+    color: $dark;
+    line-height: 1.4em;
+  }
+
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+
+  transition: color 0.4s, background 0.4s;
+
+  &:hover {
+    color: darken($accent-color, 10);
+  }
+}
+
+ul, ol {
+  margin: $gutter / 4 $gutter / 4;
+  padding: $gutter / 4 $gutter / 2;
+
+  li {
+    margin: $gutter / 4 $gutter / 2;
+  }
+}
+
+.doc-parameters {
+
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    display: block;
+    margin: 0;
+    margin-bottom: $gutter / 2;
+  }
+
+  & blockquote, & .example {
+    border-left: 5px solid $accent-serious;
+    background-color: lighten($accent-serious, 40);
+    color: $dark;
+
+    line-height: 1em;
+    font-size: 1em;
+
+    padding: 1em;
+    margin: 0;
+  }
+
+  & .example {
+    background-color: lighten($accent-serious, 50);
+  }
+
+  .parameter {
+    display: block;
+    padding: 1em;
+    background-color: $accent-serious;
+    color: $light;
+
+    margin: 0;
+
+    strong {
+      display: inline-block;
+      padding: 0 0.5em;
+      border-radius: 0.25em;
+      line-height: 2em;
+      background-color: darken($accent-serious, 10);
+    }
+
+  }
+
+}
+
+hr {
+  height: 0.25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: $very-light;
+  border: 0;
+}
+
+.teaser {
+  display: flex;
+  text-align: left;
+  align-content: center;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  aside {
+    flex-basis: 60%;
+    align-self: center;
+    @media (max-width: 700px) { flex-basis: 100%; }
+    padding: $gutter;
+  }
+
+  .content {
+    flex-basis: 40%;
+    align-self: center;
+    color: $boring-grey;
+    font-size: 12px;
+
+    @media (max-width: 700px) { flex-basis: 100%; }
+
+    &.content-full {
+      flex-basis: 100%;
+    }
+
+    h3 {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $dark;
+    }
+
+  }
+
+}
+
+.main-index {
+  text-align: center;
+
+  amp-img {
+    margin: $gutter / 2 auto;
+    width: 50%;
+  }
+
+
+  p {
+    @media (min-width: 900px) {
+      font-size: 2em;
+    }
+  }
+
+}
+
+
+
+.breadcrumbs {
+
+  padding: 1em;
+  background-color: $very-light;
+
+  ul {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+
+    li {
+      display: inline-block;
+      margin: 0 0.5em;
+
+      &::before {
+        content: ' / ';
+        position: relative;
+        margin-left: -0.5em;
+        color: $boring-grey;
+      }
+
+      a {
+        color: $boring-grey;
+      }
+
+      &:last-child a {
+        color: $accent-color;
+      }
+
+    }
+
+  }
+}
+
+header {
+  background-color: $accent-color;
+  color: $light;
+  padding: $gutter;
+  position: relative;
+
+  .brand {
+
+    width: 300px;
+    height: 30px;
+
+    @media (max-width: 500px) {
+        width: 150px;
+     }
+
+    background-image: url('/logo-letters-negative.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 300px 30px;
+    overflow: hidden;
+
+    display: inline-block;
+    position: absolute;
+    left: $gutter / 2;
+    top: $gutter / 1.5;
+    line-height: $gutter / 2;
+    text-transform: uppercase;
+    padding: $gutter / 4;
+    font-size: 1.4em;
+
+    color: rgba(0,0,0,0);
+
+    transition: width 0.2s;
+
+    &:hover {
+      color: rgba(0,0,0,0);
+      background-color: transparent;
+    }
+
+  }
+
+  a {
+    color: $light;
+    text-decoration: none;
+    border-radius: $gutter / 4;
+
+    padding: $gutter / 4;
+
+    &:hover {
+      text-decoration: none;
+      background-color: $light;
+      color: $accent-color;
+    }
+
+  }
+
+  nav {
+
+    ul {
+
+      padding: 0px;
+      margin: 0px;
+      display: block;
+
+      text-align: right;
+
+      li {
+        padding: 0px;
+        margin: 0px $gutter / 4;
+        display: inline-block;
+
+        &.hamburger {
+          display: none;
+          button {
+            position: absolute;
+            right: $gutter;
+            top: $gutter / 1.5;
+            border: 0px;
+            background-color: $light;
+            color: $accent-color;
+            font-weight: bold;
+            border-radius: 50%;
+            width: $gutter;
+            height: $gutter;
+            overflow: hidden;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+          }
+        }
+
+      }
+
+      @media (max-width: 900px) {
+        li {
+          display: none;
+          &.hamburger {
+            display: inline-block;
+          }
+
+        }
+      }
+
+    }
+
+  }
+
+}
+
+.sidebarNavigation {
+
+  width: $gutter * 10;
+
+  max-width: 95%;
+
+  ul {
+    padding: 0px;
+    margin: 0px;
+
+    li {
+      display: block;
+
+      a {
+        display: block;
+        line-height: 1.4em;
+        padding: $gutter / 4;
+      }
+
+    }
+
+  }
+}
+
+footer {
+  margin: $gutter * 2 auto;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1180px;
+  padding: $gutter;
+
+  font-size: 12px;
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  strong {
+    text-transform: uppercase;
+    margin-bottom: $gutter / 2;
+    display: block;
+    & a {
+      color: darken($boring-grey, 30);
+    }
+  }
+
+  ul {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+
+    li {
+      display: block;
+      line-height: 1.4em;
+      padding: $gutter / 4 0;
+      margin: 0;
+
+      a {
+        color: $boring-grey;
+      }
+
+    }
+
+  }
+
+  .quarter-section {
+    margin-bottom: $gutter;
+    flex-basis: 25%;
+    @media (max-width: 900px) {
+      flex-basis: 33%;
+    }
+    @media (max-width: 700px) {
+      flex-basis: 50%;
+    }
+    @media (max-width: 500px) {
+      flex-basis: 100%;
+    }
+  }
+
+}
+
+.boxes {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 12px;
+
+  .box {
+    flex-basis: 30%;
+    background-color: $very-light;
+    padding: $gutter;
+
+    margin: $gutter / 4 0;
+
+    text-align: left;
+    font-size: 12px;
+
+    h3 {
+      font-size: 1.2em;
+      line-height: 1.3em;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    a {
+      padding: 0px;
+      color: $accent-color;
+    }
+
+    p {
+      color: $boring-grey;
+      font-size: 1.2em;
+      margin: $gutter / 4 0px;
+    }
+
+    @media (max-width: 900px) {
+      flex-basis: 45%;
+    }
+    @media (max-width: 500px) {
+      flex-basis: 100%;
+    }
+
+  }
+
+}
+
+.social {
+  text-align: center;
+}
+
+.pagination {
+
+  ul {
+
+    display: flex;
+    align-content: center;
+    align-self: center;
+
+    li {
+      display: flex;
+
+      &.active a {
+        opacity: 1;
+        font-weight: bold;
+        background-color: $accent-color;
+        color: $light;
+      }
+
+      a {
+        opacity: 0.8;
+
+        border-radius: 50%;
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        text-align: center;
+
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.adsense-footer {
+  max-width: 1180px;
+  padding: $gutter;
+  margin: 0 auto;
+}

@@ -1,5 +1,5 @@
 
-language: minimal
+language: generic
 
 # Install Hugo
 install:
@@ -11,7 +11,7 @@ install:
   - ls themes
 
 script:
-  - hugo
+  - npm run build:prod
   - echo 'betterflutter.com' > public/CNAME
 
 deploy:

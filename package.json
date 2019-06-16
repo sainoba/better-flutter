@@ -1,0 +1,32 @@
+{
+  "name": "better-flutter",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/sainoba/better-flutter.svg?branch=master)](https://travis-ci.org/sainoba/better-flutter) # Better Flutter Blog",
+  "main": "index.js",
+  "scripts": {
+    "hugo:server": "hugo server --buildDrafts --buildFuture",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:prod": "npm run theme:build && hugo && npm run optimize:html",
+    "optimize:html": "./node_modules/.bin/html-minifier --input-dir ./public/ --output-dir ./public/ --file-ext html -c ./.html-minifier-config.json",
+    "theme:build": "node ./.bin/styling",
+    "theme:watch": "./node_modules/.bin/nodemon -e scss -w ./ -x npm run theme:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sainoba/better-flutter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sainoba/better-flutter/issues"
+  },
+  "homepage": "https://github.com/sainoba/better-flutter#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.0",
+    "cssnano": "^4.1.10",
+    "html-minifier": "^4.0.0",
+    "node-sass": "^4.12.0",
+    "nodemon": "^1.19.1",
+    "postcss": "^7.0.17"
+  }
+}

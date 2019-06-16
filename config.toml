@@ -1,107 +1,47 @@
 baseURL = "https://betterflutter.com/"
 languageCode = "en-us"
 title = "Better Flutter"
-# theme = "ananke"
-# theme = "sodium"
-# theme = "bilberry-hugo-theme"
+enableRobotsTXT = true
 
-# publishDir= "docs"
-# publishDir= "public" # default
+# theme
+theme = "gohugo-amp"
+# theme = "aether"
 
-# Enable / Disable algolia search
-algolia_search    = true
-algolia_appId     = "T728HSE18I"
-algolia_apiKey    = "add585bfa2f94f7b058a122a9453bb67"
-algolia_indexName = "prod_BetterFlutter"
-# Set this option to false if you want to search within all articles in all languages at once
-algolia_currentLanguageOnly = true
+pygmentsStyle="dracula"
 
 # Enable / Disable comments on the articles via Disqus.
 disqusShortname = "better-flutter"
 
-
-
-
-builddrafts                = false
-canonifyurls               = true
-contentdir                 = "content"
-layoutdir                  = "layouts"
-publishdir                 = "public"
-enableEmoji                = true
-hasCJKLanguage             = true
-summaryLength              = 200
-Paginate                   = 3
-
-theme                      = "AllinOne"
-
-pygmentsuseclasses         = true
-
-
-[permalinks]
-  blog                     = "blog/:year-:month/:slug/"
-
-
-[taxonomies]
-  tag                      = "tags"
-  series                   = "series"
-  category                 = "categories"
-
-
-[menu]
-  [[menu.main]]
-    name                   = "Blog"
-    weight                 = -120
-    identifier             = "blog"
-    url                    = "blog/"  
-
-  [[menu.main]]
-    name                   = "Moment"
-    weight                 = -110
-    identifier             = "moment"
-    url                    = "moment/" 
-
-  [[menu.main]]
-    name                   = "About"
-    weight                 = -100
-    identifier             = "about"
-    url                    = "about/"  
-
- 
+googleAnalytics = "UA-139987872-1"
+GoogleAnalytics = "UA-XXXXXX"
 
 [params]
-  faviconfile              = "img/zheng.png"               # from static/
-  avatar                   = "img/profile.jpg"             # path to image in static dir e.g img/avatar.png 
-  author                   = "Orianna"
-  description              = ["Be myself.", "Love the wonderful world.", "Do the right things and be a better man."]           # appears in the site header when set to a non-empty string
-  welcome_head             = "Hello, World!"
-  welcome_word             = "~ No Day But Today ~"
+    amp = true # enables amp features
+    ampCdnRoot = "https://cdn.ampproject.org/" # defined base cdn root of the amp projects files
+    ampRelease = "v0" # define amp release you want to use
+    ampElementsVersion = "0.1" # define amp-elements version you want to use
 
-  latestpostscount         = 5                             # how many posts to display on the home page
-  bloggroupby              = 'month'
-  dateform                 = "Jan 2, 2006"
-  dateformfull             = "2006-01-02  Monday  15:04:05"
-  noshowreadtime           = false                         # if true, don't show "<x> minutes read" in posts
+    # define which amp-elements you are using globally, these elements will be included in every page
+    ampElements = ["amp-accordion","amp-ad","amp-analytics","amp-carousel","amp-iframe","amp-app-banner","amp-dynamic-css-classes","amp-form","amp-fx-flying-carpet","amp-image-lightbox","amp-lightbox","amp-sidebar","amp-social-share","amp-sticky-ad","amp-user-notification"]
 
-  # slides
-  slidesDirPath            = "themes/AllinOne/static/img/header-slides"    # path to image in local dir (path for hugo)
-  slidesDirPathURL         = "img/header-slides"    # path to image in static dir (for static pages)
+    themeColor = "#112233" # define a theme color (this will colorize the android address-bar)
 
-  # highlighting 
-  highlightjs              = true
+    adsensePublisher = "ca-pub-123456789" # required if you want to include google adsense
+    googleAnalytics = "UA-123456-78" # required if you want to use google analytics
+    appleItunesApp = "app-id=123456789, app-argument=app-name://link/to/app-content" # required if you want to add an app banner with iOS app
+    ampManifest = "/amp-manifest.json" # required if you want to add the app-banner feature
 
-  # latex
-  katex                    = true
+    alternatePageName = "HUGO AMP" # alternative name for website structured data
+    organizationLogo = "https://gohugohq.com/logo.png" # set organization logo for structured data
+    organizationName = "gohugohq.com" # set organization name
+    organizationAddress = "Some Street 123, 12345 City" # set organization address
 
-  # links
-  email                    = "you@email.com"
-  github                   = "//github.com/you"
-  linkedin                 = "//linkedin.com/in/you"
-  facebook                 = "//facebook.com/you"
-  googleplus               = "//google.com/you"
-  twitter                  = "//twitter.com/you" 
-  px500                    = "//px500"
-  instagram                = "//instagram.com/you"
-  include_rss              = true                          # include RSS <link> tag in <head> and show RSS icon
-  
-  # analytics
-  googleAnalytics          = "your-google-analytic-id"
+    socialProfiles = ["http://www.facebook.com/your-profile","http://instagram.com/yourProfile","http://www.linkedin.com/in/yourprofile","http://plus.google.com/your_profile"]  # for sameAs in organization's structured data
+
+    publisherName = "gohugohq.com" # publisher used in article schema
+    publisherLogo = "https://gohugo-amp.gohugohq.com/logo-publisher.png" # https://developers.google.com/search/docs/data-types/articles#logo-guidelines
+    publisherLogoWidth = 600 # logo width
+    publisherLogoHeight = 60 # logo height
+
+    stylesheetRegular = ["/base-styling.css"] # these styles are used when amp is disabled for a specific page
+    javascriptRegular = ["/script.js"] # these scripts are used when amp is disabled for a specific page

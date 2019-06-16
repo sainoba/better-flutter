@@ -11,6 +11,7 @@ install:
   - ls themes
 
 script:
+  - npm install
   - npm run build:prod
   - echo 'betterflutter.com' > public/CNAME
 

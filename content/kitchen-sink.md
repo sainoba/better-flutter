@@ -16,7 +16,6 @@ title = "kitchen sink"
 +++
 
 # Kitchen sink
-
 A kitchen-sink is a showcase and test-page for all available elements.
 
 ## Second Header
@@ -59,7 +58,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 ```
  
 ### Images
-{{% amp-image src="//placehold.it/350x350" srcset="//placehold.it/600x600 640w, //placehold.it/150x150 320w" height="300" width="300" layout="responsive" alt="Alternative Text" attribution="CC courtesy of placehold.it" %}}
+{{< amp-image src="//placehold.it/350x350" srcset="//placehold.it/600x600 640w, //placehold.it/150x150 320w" height="300" width="300" layout="responsive" alt="Alternative Text" attribution="CC courtesy of placehold.it" >}}
 
 ```markdown
 {{</*
@@ -80,7 +79,7 @@ Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod 
 {{</* amp-button onTap="my-custom-lightbox" text="Open my custom lightbox" */>}}
 ```
 
-{{% amp-lightbox id="my-custom-lightbox" %}}
+{{< amp-lightbox id="my-custom-lightbox" >}}
 # Hello Lightbox
 Wow this is amazing.
 {{% /amp-lightbox %}}
@@ -96,9 +95,9 @@ Wow this is amazing.
 
 ### Image Lightbox 
 {{% amp-image-lightbox id="test-image-lightbox"  %}}
-{{% amp-image src="https://placehold.it/300x150/cceeff/000000" onTap="test-image-lightbox" role="button" tabindex="0" layout="responsive" height="150" width="300" %}}
-{{% amp-image src="https://placehold.it/600x300/cc00ff/000000" onTap="test-image-lightbox" role="button" tabindex="0" layout="responsive" height="300" width="600" %}}
-{{% amp-image src="https://placehold.it/400x200/ccccff/000000" onTap="test-image-lightbox" role="button" tabindex="0" layout="responsive" height="200" width="400" %}}
+{{< amp-image src="https://placehold.it/300x150/cceeff/000000" onTap="test-image-lightbox" role="button" tabindex="0" layout="responsive" height="150" width="300" >}}
+{{< amp-image src="https://placehold.it/600x300/cc00ff/000000" onTap="test-image-lightbox" role="button" tabindex="0" layout="responsive" height="300" width="600" >}}
+{{< amp-image src="https://placehold.it/400x200/ccccff/000000" onTap="test-image-lightbox" role="button" tabindex="0" layout="responsive" height="200" width="400" >}}
 
 ```markdown
 {{</* amp-image-lightbox id="test-image-lightbox"  */>}}

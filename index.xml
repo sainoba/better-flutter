@@ -6,29 +6,20 @@
     <description>Recent content on Better Flutter</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 13 Jun 2019 01:01:43 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Oct 2016 19:28:41 +0200</lastBuildDate>
     
 	<atom:link href="https://betterflutter.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>My First Post :)</title>
-      <link>https://betterflutter.com/posts/my-first-post/</link>
-      <pubDate>Thu, 13 Jun 2019 01:01:43 +0000</pubDate>
+      <title>gohugohq. - your gohugo guide</title>
+      <link>https://betterflutter.com/index.html</link>
+      <pubDate>Sun, 16 Oct 2016 19:28:41 +0200</pubDate>
       
-      <guid>https://betterflutter.com/posts/my-first-post/</guid>
-      <description>Hellow World!
-1  print(&amp;#39;Hello world!&amp;#39;);   </description>
-    </item>
-    
-    <item>
-      <title>My Second Post :)</title>
-      <link>https://betterflutter.com/blog/2019-06/my-second-post/</link>
-      <pubDate>Thu, 13 Jun 2019 01:01:43 +0000</pubDate>
-      
-      <guid>https://betterflutter.com/blog/2019-06/my-second-post/</guid>
-      <description>Hello Second!!
-print(&amp;#39;Hello world!&amp;#39;); &amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Pages }} {{ .Render &amp;#34;summary&amp;#34;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt; </description>
+      <guid>https://betterflutter.com/index.html</guid>
+      <description>&amp;lt;amp-img src=&amp;ldquo;/logo.png&amp;rdquo; alt=&amp;ldquo;gohugo-amp-theme &amp;ldquo; attribution=&amp;ldquo;gohugohq.com &amp;ldquo; srcset=&amp;ldquo;/logo-large.png 1000w, /logo.png 200w &amp;ldquo;
+width=&amp;quot;450&amp;quot; height=&amp;quot;450&amp;quot; layout=&amp;quot;responsive&amp;quot;&amp;gt;  
+This Hugo theme is supposed to be a starter theme to make it easy to adapt to Google&amp;rsquo;s AMP-Project. Included in the theme are 40+ shortcodes and partials and automatic Structured Data making it a pleasure to embed AMP-Elements within your content files or your template.</description>
     </item>
     
   </channel>

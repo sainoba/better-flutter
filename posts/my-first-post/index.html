@@ -189,7 +189,7 @@ gohugo-amp
             "vars": {
                 "account": "UA-123456-78"
             },
-            "triggers":  null 
+            "triggers": {"trackEvent":{"on":"click","request":"event","selector":"body","vars":{"eventAction":"click","eventCategory":"body-click"}},"trackPageview":{"on":"visible","request":"pageview"}}
         }
 </script>
 </amp-analytics>

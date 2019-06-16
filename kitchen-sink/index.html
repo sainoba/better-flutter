@@ -156,12 +156,8 @@ gohugo-amp
 <pre><code class=language-markdown>{{&lt; partial "test/lipsum" >}}
 </code></pre>
 <h3 id=images>Images</h3>
-<p>&lt;amp-img src=“//placehold.it/350x350” alt=“Alternative Text “ attribution=“CC courtesy of placehold.it “ srcset=“//placehold.it/600x600 640w, //placehold.it/150x150 320w “</p>
-<pre><code>width="300"
-height="300"
-layout="responsive">
-</code></pre>
-<p></p>
+<amp-img src=//placehold.it/350x350 alt="Alternative Text " attribution="CC courtesy of placehold.it " srcset="//placehold.it/600x600 640w, //placehold.it/150x150 320w " width=300 height=300 layout=responsive>
+</amp-img>
 <pre><code class=language-markdown>{{&lt;
     amp-image src="//placehold.it/350x350"
     srcset="//placehold.it/600x600 640w, //placehold.it/150x150 320w"
@@ -176,13 +172,11 @@ layout="responsive">
 <p><button on='tap:"my-custom-lightbox"'>Open my custom lightbox</button></p>
 <pre><code class=language-markdown>{{&lt; amp-button onTap="my-custom-lightbox" text="Open my custom lightbox" >}}
 </code></pre>
-<p><amp-lightbox id=my-custom-lightbox layout=nodisplay>
-<div class=lightbox on='tap:"my-custom-lightbox".close' role=button tabindex=0></div></amp-lightbox></p>
-<h1 id=hello-lightbox>Hello Lightbox</h1>
-<p>Wow this is amazing.</p>
-<pre><code>&lt;/div>
-</code></pre>
-<p></p>
+<amp-lightbox id=my-custom-lightbox layout=nodisplay>
+<div class=lightbox on='tap:"my-custom-lightbox".close' role=button tabindex=0>
+# Hello Lightbox Wow this is amazing.
+</div>
+</amp-lightbox>
 <p>Lightbox content:</p>
 <pre><code class=language-markdown>{{&lt; amp-lightbox id="my-custom-lightbox" >}}
 # Hello Lightbox
@@ -191,33 +185,13 @@ Wow this is amazing.
 </code></pre>
 <h3 id=image-lightbox>Image Lightbox</h3>
 <p><amp-image-lightbox id=test-image-lightbox layout=nodisplay></amp-image-lightbox>
-&lt;amp-img src=“<a href='https://placehold.it/300x150/cceeff/000000"'>https://placehold.it/300x150/cceeff/000000"</a></p>
-<pre><code>tabindex="0"
-on="tap:&amp#34;test-image-lightbox&amp#34;"
-role="button"
-width="300"
-height="150"
-layout="responsive">
-</code></pre>
-<p></p>
-<p>&lt;amp-img src=“<a href='https://placehold.it/600x300/cc00ff/000000"'>https://placehold.it/600x300/cc00ff/000000"</a></p>
-<pre><code>tabindex="0"
-on="tap:&amp#34;test-image-lightbox&amp#34;"
-role="button"
-width="600"
-height="300"
-layout="responsive">
-</code></pre>
-<p></p>
-<p>&lt;amp-img src=“<a href='https://placehold.it/400x200/ccccff/000000"'>https://placehold.it/400x200/ccccff/000000"</a></p>
-<pre><code>tabindex="0"
-on="tap:&amp#34;test-image-lightbox&amp#34;"
-role="button"
-width="400"
-height="200"
-layout="responsive">
-</code></pre>
-<p></p>
+<amp-img src=https://placehold.it/300x150/cceeff/000000 tabindex=0 on='tap:"test-image-lightbox"' role=button width=300 height=150 layout=responsive>
+</amp-img>
+<amp-img src=https://placehold.it/600x300/cc00ff/000000 tabindex=0 on='tap:"test-image-lightbox"' role=button width=600 height=300 layout=responsive>
+</amp-img>
+<amp-img src=https://placehold.it/400x200/ccccff/000000 tabindex=0 on='tap:"test-image-lightbox"' role=button width=400 height=200 layout=responsive>
+</amp-img>
+</p>
 <pre><code class=language-markdown>{{&lt; amp-image-lightbox id="test-image-lightbox"  >}}
 {{&lt; amp-image src="https://placehold.it/300x150/cceeff/000000" onTap="test-image-lightbox" role="button" tabindex="0" layout="responsive" height="150" width="300" >}}
 {{&lt; amp-image src="https://placehold.it/600x300/cc00ff/000000" onTap="test-image-lightbox" role="button" tabindex="0" layout="responsive" height="300" width="600" >}}
@@ -533,7 +507,7 @@ data-label=“Folllowing me!”</p>
             "vars": {
                 "account": "UA-123456-78"
             },
-            "triggers":  null 
+            "triggers": {"trackEvent":{"on":"click","request":"event","selector":"body","vars":{"eventAction":"click","eventCategory":"body-click"}},"trackPageview":{"on":"visible","request":"pageview"}}
         }
 </script>
 </amp-analytics>

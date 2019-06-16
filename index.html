@@ -92,6 +92,11 @@ gohugo-amp
 </ul>
 </amp-sidebar>
 <main class=main-index>
+The content
+<p>His</p>
+<amp-img src=/logo.png alt="gohugo-amp-theme " attribution="gohugohq.com " srcset="/logo-large.png 1000w, /logo.png 200w " width=450 height=450 layout=responsive>
+</amp-img>
+<p>This Hugo theme is supposed to be a starter theme to make it easy to adapt to <a href=https://www.ampproject.org/ >Google’s AMP-Project</a>. Included in the theme are <a href=/shortcodes/ ><strong>40+ shortcodes and partials</strong></a> and <a href=/schema/ >automatic Structured Data</a> making it a pleasure to embed AMP-Elements within your content files or your template.</p>
 <hr>
 <section class=teaser>
 <div class=content>
@@ -218,7 +223,7 @@ $ rm -rf gohugo-amp/.git</code></pre>
             "vars": {
                 "account": "UA-123456-78"
             },
-            "triggers":  null 
+            "triggers": {"trackEvent":{"on":"click","request":"event","selector":"body","vars":{"eventAction":"click","eventCategory":"body-click"}},"trackPageview":{"on":"visible","request":"pageview"}}
         }
 </script>
 </amp-analytics>

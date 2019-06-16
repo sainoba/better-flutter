@@ -23,10 +23,10 @@
     
     <item>
       <title>My Second Post :)</title>
-      <link>https://betterflutter.com/blog/my-first-post/</link>
+      <link>https://betterflutter.com/blog/2019-06/my-second-post/</link>
       <pubDate>Thu, 13 Jun 2019 01:01:43 +0000</pubDate>
       
-      <guid>https://betterflutter.com/blog/my-first-post/</guid>
+      <guid>https://betterflutter.com/blog/2019-06/my-second-post/</guid>
       <description>Hello Second!!
 print(&amp;#39;Hello world!&amp;#39;); &amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Pages }} {{ .Render &amp;#34;summary&amp;#34;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt; </description>
     </item>

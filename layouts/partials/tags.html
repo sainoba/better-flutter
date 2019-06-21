@@ -1,0 +1,8 @@
+{{ with .Params.tags }}
+<span class="post-tags">
+    <i class="fas fa-tag"></i>
+    {{ range . }}
+    <a href="{{ "/tags/" | absURL }}{{ . | urlize }}" rel="tag"><span class="chip">{{ . }}</span></a>
+    {{ end }}
+</span>/
+{{ end }}

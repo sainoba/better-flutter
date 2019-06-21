@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>Test post number 2</title>
+      <link>https://betterflutter.com/posts/test-post-number-2/</link>
+      <pubDate>Fri, 21 Jun 2019 00:51:07 +0000</pubDate>
+      
+      <guid>https://betterflutter.com/posts/test-post-number-2/</guid>
+      <description>This is something.</description>
+    </item>
+    
+    <item>
       <title>My First Post :)</title>
       <link>https://betterflutter.com/posts/my-first-post/</link>
       <pubDate>Thu, 13 Jun 2019 01:01:43 +0000</pubDate>

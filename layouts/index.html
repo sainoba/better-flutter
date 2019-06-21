@@ -22,6 +22,15 @@ $ rm -rf gohugo-amp/.git</code></pre>
     </section>
 
     <hr>
+    <section>
+        <ul>
+            {{range .Pages}}
+                <li ><a href="{{.URL}}">{{.Title}}</a></li>
+            {{end}}
+        </ul>
+    </section>
+
+    <hr>
 
     <section class="boxes">
         <section class="box">

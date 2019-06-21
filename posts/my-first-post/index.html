@@ -121,9 +121,26 @@ gohugo-amp
 </span><span style=color:#6272a4></span>print(<span style=color:#f1fa8c>'Hello world!'</span>);</code></pre></table>
 </div>
 </div>
-<amp-iframe width=200 height=100 sandbox="allow-scripts allow-same-origin" layout=responsive frameborder=0 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAyAS599A2GGPKTmtNr9CptD61LE4gN6oQ&q=iceland">
-<amp-img layout=fill src=/img/disqus.svg placeholder></amp-img>
-</amp-iframe>
+<div id=disqus_thread></div>
+<script>
+var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "better-flutter" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
 </main>
 <div class=adsense-footer>
 <amp-ad type=adsense width=320 height=100 layout=responsive data-ad-client=ca-pub-123456789 data-ad-slot=2195367133>

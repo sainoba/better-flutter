@@ -16,10 +16,6 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields each document in this collection have
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "date" }
-      - { label: "Body", name: "body", widget: "markdown" }
-
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Publish Date", name: "date", required: false, widget: "datetime"}
       - { label: "Draft", name: "draft", required: false, widget: "boolean", default: true}

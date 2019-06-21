@@ -22,13 +22,19 @@ $ rm -rf gohugo-amp/.git</code></pre>
     </section>
 
     <hr>
-    <section>
+    <!-- <section>
         <ul>
             {{range .Pages}}
                 <li ><a href="{{.URL}}">{{.Title}}</a></li>
             {{end}}
         </ul>
-    </section>
+    </section> -->
+    <section class="w-100 mw8">
+		{{ $pages := where .Paginator.Pages ".Params.skip" "ne" "true" }}
+		{{ range where (where $pages ".Date.Unix" "<" now.Unix) "Section" "ne" "slides" }}
+			{{ partial "li.html" . }}
+		{{ end }}
+	</section>
 
     <hr>
 

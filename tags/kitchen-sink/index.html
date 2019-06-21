@@ -2,15 +2,17 @@
 <!doctype html>
 <html amp lang=en-us class=no-js>
 <head>
-<title>getting started</title>
+<title>kitchen-sink</title>
 <meta charset=utf-8>
 <script async custom-element=amp-accordion src=https://cdn.ampproject.org/v0/amp-accordion-0.1.js></script><script async custom-element=amp-ad src=https://cdn.ampproject.org/v0/amp-ad-0.1.js></script><script async custom-element=amp-analytics src=https://cdn.ampproject.org/v0/amp-analytics-0.1.js></script><script async custom-element=amp-carousel src=https://cdn.ampproject.org/v0/amp-carousel-0.1.js></script><script async custom-element=amp-iframe src=https://cdn.ampproject.org/v0/amp-iframe-0.1.js></script><script async custom-element=amp-app-banner src=https://cdn.ampproject.org/v0/amp-app-banner-0.1.js></script><script async custom-element=amp-dynamic-css-classes src=https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js></script><script async custom-element=amp-form src=https://cdn.ampproject.org/v0/amp-form-0.1.js></script><script async custom-element=amp-fx-flying-carpet src=https://cdn.ampproject.org/v0/amp-fx-flying-carpet-0.1.js></script><script async custom-element=amp-image-lightbox src=https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js></script><script async custom-element=amp-lightbox src=https://cdn.ampproject.org/v0/amp-lightbox-0.1.js></script><script async custom-element=amp-sidebar src=https://cdn.ampproject.org/v0/amp-sidebar-0.1.js></script><script async custom-element=amp-social-share src=https://cdn.ampproject.org/v0/amp-social-share-0.1.js></script><script async custom-element=amp-sticky-ad src=https://cdn.ampproject.org/v0/amp-sticky-ad-1.0.js></script><script async custom-element=amp-user-notification src=https://cdn.ampproject.org/v0/amp-user-notification-0.1.js></script>
 <script async src=https://cdn.ampproject.org/v0.js></script>
 <meta name=apple-itunes-app content="app-id=123456789, app-argument=app-name://link/to/app-content">
 <link rel=amp-manifest href=/amp-manifest.json>
-<link rel=canonical href=https://betterflutter.com/install/ >
+<link rel=canonical href=https://betterflutter.com/tags/kitchen-sink/ >
 <link rel=icon href=/favicon.png type=image/png sizes=144x144>
 <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
+<link href=https://betterflutter.com/tags/kitchen-sink/index.xml rel=alternate type=application/rss+xml title="Better Flutter">
+<link href=https://betterflutter.com/tags/kitchen-sink/index.xml rel=feed type=application/rss+xml title="Better Flutter">
 <meta name=theme-color content=#112233>
 <script type=application/ld+json>
 {
@@ -48,8 +50,15 @@
         "@type": "ListItem",
         "position":  2 ,
         "item": {
-          "@id": "https:\/\/betterflutter.com\/install\/",
-          "name": "install"
+          "@id": "https:\/\/betterflutter.com\/tags\/",
+          "name": "tags"
+        }
+    },{
+        "@type": "ListItem",
+        "position":  3 ,
+        "item": {
+          "@id": "https:\/\/betterflutter.com\/tags\/kitchen-sink\/",
+          "name": "kitchen-sink"
         }
     }]
 }
@@ -107,48 +116,10 @@ gohugo-amp
 <nav class=breadcrumbs>
 <ul>
 <li><a href=https://betterflutter.com/ >home</a></li>
-<li><a href=https://betterflutter.com/install/ >install</a></li>
+<li><a href=https://betterflutter.com/tags/ >tags</a></li>
+<li><a href=https://betterflutter.com/tags/kitchen-sink/ >kitchen-sink</a></li>
 </ul>
 </nav>
-<h1 id=getting-started-with-gohugo-amps>getting started with gohugo-amps</h1>
-<p>This Hugo theme is supposed to be a starter theme to make it easy to adapt to <a href=https://www.ampproject.org/ >Google’s AMP-Project</a>. Included in the theme are <a href=/shortcodes/ ><strong>40+ shortcodes and partials</strong></a> making it a pleasure to embed AMP-Elements within your content files or your template.</p>
-<h2 id=installation>Installation</h2>
-<p>Go to the directory where you have your Hugo site and run:</p>
-<pre><code>$ mkdir themes
-$ cd themes
-$ git clone https://github.com/wildhaber/gohugo-amp.git
-$ rm -rf gohugo-amp/.git
-</code></pre>
-<hr>
-<h2 id=configuration-config><a href=/config/ >Configuration</a></h2>
-<p>After installing the theme successfully, we recommend you to take a look at the <a href=/kitchen-sink/ >kitchen sink</a>. You find extensive documentation and a demonstration of all shortcodes and partials there.</p>
-<p>Read more about the <code>config.toml</code> in the <a href=/config/ >configuration example</a>. You will find explanations how to setup <a href=/config/amp/ >General AMP Configuration</a>, <a href=/config/appearance/ >Theme Appearance</a>, using <a href=/config/adsense/ >AdSense</a>, <a href=/config/analytics/ >Configure Analytics with custom Triggers</a> and <a href=/config/ >many things more</a>.</p>
-<hr>
-<h2 id=styling-styling><a href=/styling/ >Styling</a></h2>
-<p>AMP does not allow you to include CSS styles with the regular <code>link rel='stylesheet'</code>-tag we need to embed the CSS in the header section.</p>
-<p>For this case add a file in your regular <code>layouts/partials/</code>-folder called <code>stylesheet.html</code>. In this file you can write pure CSS (no <code>&lt;styles></code>-Tags required)</p>
-<p>Since its not a cool idea have to write your stylesheets in an HTML-File we provide an automated process rendering your Sass output directly in this file. You can read more in our <a href=https://gohugo-amp.gohugohq.com/styling/ >Guide about Styling</a> in the documentation.</p>
-<p>Why we had to do this process you can read in the <a href=https://www.ampproject.org/docs/guides/responsive_amp>official amp-project documentation</a>.</p>
-<div id=disqus_thread></div>
-<script>
-var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "better-flutter" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
-<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
 </main>
 <div class=adsense-footer>
 <amp-ad type=adsense width=320 height=100 layout=responsive data-ad-client=ca-pub-123456789 data-ad-slot=2195367133>

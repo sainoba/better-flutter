@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>elements on Better Flutter</title>
+    <link>https://betterflutter.com/tags/elements/</link>
+    <description>Recent content in elements on Better Flutter</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Nov 2016 21:05:25 +0100</lastBuildDate>
+    
+	<atom:link href="https://betterflutter.com/tags/elements/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>kitchen sink</title>
+      <link>https://betterflutter.com/kitchen-sink/</link>
+      <pubDate>Sun, 06 Nov 2016 21:05:25 +0100</pubDate>
+      
+      <guid>https://betterflutter.com/kitchen-sink/</guid>
+      <description>Kitchen sink A kitchen-sink is a showcase and test-page for all available elements.
+Second Header Lorem ipsum dolor sit amet, Kitchen Sink with AMP Elements consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</description>
+    </item>
+    
+  </channel>
+</rss>

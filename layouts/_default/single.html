@@ -1,8 +1,9 @@
 {{ partial "structure/head.html" . }}
 {{ partial "header.html" . }}
 
-<main>
+<main class="single-page">
     {{ partial "navigation/breadcrumbs.html" . }}
+    <h1 class="title">{{ .Title }}</h1>
     {{ .Content }}
 
     {{ template "_internal/disqus.html" . }}

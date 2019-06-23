@@ -2,13 +2,13 @@
     {{ partial "amp/adsense.html" (dict "context" $ "slot" "2195367133" "width" "320" "height" "100" "layout" "responsive") }}
 </div>
 
-<div class="social">
+{{/*  <div class="social">
     {{ partial "amp/social-share.html" (dict "facebook" "true" "twitter" "true" "pinterest" "true" "linkedin" "true" "gplus" "true" "email" "true") }}
-</div>
+</div>  */}}
 
 <hr>
 <footer>
-    <div class="quarter-section">
+    {{/*  <div class="quarter-section">
         <strong><a href="/">Getting started</a></strong>
         <ul>
             <li><a href="/install/">Install</a></li>
@@ -49,6 +49,9 @@
             <li><a href="https://github.com/wildhaber/gohugo-amp/">Github</a></li>
             <li><a href="https://github.com/wildhaber/gohugo-amp/issues/">Issue Tracker</a></li>
         </ul>
+    </div>  */}}
+    <div class="inner-footer">
+        Better Flutter © {{ .Date.Format "2006" }}
     </div>
 </footer>
 

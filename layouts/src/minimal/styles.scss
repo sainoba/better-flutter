@@ -2,12 +2,14 @@ $light: #ffffff;
 $dark: #112233;
 $gutter: 30px;
 $base-font-size: 16px;
-$accent-color: #ff1d55;
+$accent-color: #0984e3;
 $accent-serious: #0379c4;
 $very-light: #f7f7f7;
 $boring-grey: #696969;
 
 $text-grey: #5e6163;
+
+$hover: darken(white, 10%);
 
 html {
   font: 400 $base-font-size "Open Sans", Arial, sans-serif;
@@ -17,6 +19,51 @@ p {
   font-size: $base-font-size * 1.125;
   line-height: $base-font-size * 2;
 }
+
+h2, h2 a {
+  font: 700 43px Montserrat,Arial,Sans-Serif;
+  line-height: 66px;
+  margin: 50px 0;
+}
+
+.single-page {
+  .title {
+    font: 700 43px Montserrat,Arial,Sans-Serif;
+  }
+}
+
+.breadcrumbs > ul {
+  border-radius: 5px;
+  padding: 10px 16px;
+  list-style: none;
+  background-color: $very-light;
+  /* Display list items side by side */
+  li {
+    display: inline;
+    font-size: 18px;
+
+    /* Add a color to all links inside the list */
+    a {
+      color: $accent-color;
+      text-decoration: none;
+    transition: all 0.2s ease;
+      /* Add a color on mouse-over */
+      &:hover {
+        color: $accent-serious;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  /* Add a slash symbol (/) before/behind each list item */
+  li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">";
+  }
+}
+
+
 
 .home-button {
   margin-top: 8px;
@@ -51,11 +98,11 @@ main {
   padding: $gutter;
   margin: 0 auto;
 
-  h1 + p {
-    @media (min-width: 900px) {
-      font-size: 2em;
-    }
-  }
+  // h1 + p {
+  //   @media (min-width: 900px) {
+  //     font-size: 2em;
+  //   }
+  // }
 }
 
 header {
@@ -63,39 +110,20 @@ header {
   color: $light;
   padding: $gutter;
   position: relative;
-
+  .inner-header {
+    margin: 0 auto;
+    max-width: 1180px;
+  }
   .brand {
-    width: 300px;
-    height: 30px;
-
-    @media (max-width: 500px) {
-      width: 150px;
-    }
-
-    background-image: url("/logo-letters-negative.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 300px 30px;
-    overflow: hidden;
-
-    display: inline-block;
-    position: absolute;
-    left: $gutter / 2;
-    top: $gutter / 1.5;
-    line-height: $gutter / 2;
-    text-transform: uppercase;
-    padding: $gutter / 4;
-    font-size: 1.4em;
-
-    color: rgba(0, 0, 0, 0);
-
-    transition: width 0.2s;
-
+    color: white;
+    text-decoration: none;
+    font-size: $base-font-size * 2;
+    transition: all 0.2s ease;
     &:hover {
-      color: rgba(0, 0, 0, 0);
-      background-color: transparent;
+      text-shadow: 0 0 2px white;
     }
   }
+
 
   // a {
   //   color: $light;
@@ -182,59 +210,70 @@ header {
   }
 }
 
+// footer {
+//   margin: $gutter * 2 auto;
+//   display: flex;
+//   align-content: center;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   max-width: 1180px;
+//   padding: $gutter;
+
+//   font-size: 12px;
+
+//   a:hover {
+//     text-decoration: none;
+//   }
+
+//   strong {
+//     text-transform: uppercase;
+//     margin-bottom: $gutter / 2;
+//     display: block;
+//     & a {
+//       color: darken($boring-grey, 30);
+//     }
+//   }
+
+//   ul {
+//     display: block;
+//     padding: 0px;
+//     margin: 0px;
+
+//     li {
+//       display: block;
+//       line-height: 1.4em;
+//       padding: $gutter / 4 0;
+//       margin: 0;
+
+//       a {
+//         color: $boring-grey;
+//       }
+//     }
+//   }
+
+//   .quarter-section {
+//     margin-bottom: $gutter;
+//     flex-basis: 25%;
+//     @media (max-width: 900px) {
+//       flex-basis: 33%;
+//     }
+//     @media (max-width: 700px) {
+//       flex-basis: 50%;
+//     }
+//     @media (max-width: 500px) {
+//       flex-basis: 100%;
+//     }
+//   }
+// }
+
 footer {
-  margin: $gutter * 2 auto;
-  display: flex;
-  align-content: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1180px;
-  padding: $gutter;
-
-  font-size: 12px;
-
-  a:hover {
-    text-decoration: none;
-  }
-
-  strong {
-    text-transform: uppercase;
-    margin-bottom: $gutter / 2;
-    display: block;
-    & a {
-      color: darken($boring-grey, 30);
-    }
-  }
-
-  ul {
-    display: block;
-    padding: 0px;
-    margin: 0px;
-
-    li {
-      display: block;
-      line-height: 1.4em;
-      padding: $gutter / 4 0;
-      margin: 0;
-
-      a {
-        color: $boring-grey;
-      }
-    }
-  }
-
-  .quarter-section {
-    margin-bottom: $gutter;
-    flex-basis: 25%;
-    @media (max-width: 900px) {
-      flex-basis: 33%;
-    }
-    @media (max-width: 700px) {
-      flex-basis: 50%;
-    }
-    @media (max-width: 500px) {
-      flex-basis: 100%;
-    }
+  background-color: #333;
+  color: white;
+  padding: 20px 50px;
+  .inner-footer {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1180px;
   }
 }
 
@@ -287,6 +326,7 @@ footer {
         &:hover {
           color: $accent-color;
           background-color: #fff;
+          text-decoration: underline;
         }
       }
     }

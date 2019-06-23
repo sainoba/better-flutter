@@ -18,6 +18,8 @@ collections:
       - { label: "Title", name: "title", widget: "string"}
       - { label: "Publish Date", name: "date", required: false, widget: "datetime"}
       - { label: "Draft", name: "draft", required: false, widget: "boolean", default: true}
+      - { label: "Body", name: "body", widget: "markdown"}
+      - { label: "Summary", name: "summary", required: false,  widget: "string"}
       - { label: "Categories", name: "categories", required: false, widget: "list"}
       - { label: "Tags", name: "tags", required: false, widget: "list"}
       - { label: "Keywords", name: "keywords", required: false, widget: "list"}
@@ -25,5 +27,3 @@ collections:
       - { label: "Thumbnail Image Position", name: "thumbnailImagePosition", required: false, widget: "select", options: ["left", "top", "right"]}
       - { label: "Thumbnail Image", name: "thumbnailImage", required: false, widget: "image"}
       - { label: "Cover Image", name: "coverImage", required: false, widget: "image"}
-      - { label: "Body", name: "body", widget: "markdown"}
-      - { label: "Summary", name: "summary", required: false,  widget: "string"}

@@ -1,6 +1,7 @@
 {{ with .Params.tags }}
 <span class="post-tags">
     <i class="fas fa-tags"></i>
+    <i class="icon-tags"></i>
     {{ range . }}
     <a class="tag" href="{{ "/tags/" | absURL }}{{ . | urlize }}" rel="tag">{{ . }}</a>
     {{ end }}

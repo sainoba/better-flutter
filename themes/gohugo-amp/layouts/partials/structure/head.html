@@ -4,7 +4,11 @@
 <!--[if lt IE 8 ]><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="en" class="no-js oldie"><![endif]-->
 <!--[if IE 8 ]><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="en" class="no-js ie8"><![endif]-->
 <!--[if IE 9 ]><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="en" class="no-js ie9"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="{{ with $.Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}" class="no-js"><!--<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html {{ if isset $.Site.Params "amp" }}amp{{ end }} lang="{{ with $.Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}"
+    class="no-js">
+<!--<![endif]-->
+
 <head>
     <title>{{ .Title }} - {{ .Site.Title }}</title>
     <meta charset="utf-8">
@@ -26,17 +30,17 @@
 
     {{ partial "seo/main" . }}
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700|Open+Sans:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700|Open+Sans:400,600&display=swap"
+        rel="stylesheet">
 
     {{ .Hugo.Generator }}
 </head>
 
 <body>
-{{ if isset $.Site.Params "ampmanifest" }}
-{{ with $.Site.Data.app.banner }}{{ partial "amp/app-banner" . }}{{ end }}
-{{ end }}
+    {{ if isset $.Site.Params "ampmanifest" }}
+    {{ with $.Site.Data.app.banner }}{{ partial "amp/app-banner" . }}{{ end }}
+    {{ end }}
 
-{{ else }}
-{{ partial "structure/head.no-amp" . }}
-{{ end }}
+    {{ else }}
+    {{ partial "structure/head.no-amp" . }}
+    {{ end }}

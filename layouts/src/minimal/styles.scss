@@ -32,6 +32,10 @@ h2, h2 a {
   }
 }
 
+i[class^="icon-"] {
+  color: $accent-color;
+}
+
 .breadcrumbs > ul {
   border-radius: 5px;
   padding: 10px 16px;

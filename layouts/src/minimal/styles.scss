@@ -1,11 +1,22 @@
 $light: #ffffff;
 $dark: #112233;
 $gutter: 30px;
-$base-font-size: 14px;
+$base-font-size: 16px;
 $accent-color: #ff1d55;
 $accent-serious: #0379c4;
 $very-light: #f7f7f7;
 $boring-grey: #696969;
+
+$text-grey: #5e6163;
+
+html {
+  font: 400 $base-font-size "Open Sans", Arial, sans-serif;
+}
+
+p {
+  font-size: $base-font-size * 1.125;
+  line-height: $base-font-size * 2;
+}
 
 .home-button {
   margin-top: 8px;
@@ -24,30 +35,28 @@ $boring-grey: #696969;
 //   align-items: center;
 // }
 
-a {
-  color: $accent-color;
-  text-decoration: none;
+// a {
+//   color: $accent-color;
+//   text-decoration: none;
 
-  transition: color 0.4s, background 0.4s;
+//   transition: color 0.4s, background 0.4s;
 
-  &:hover {
-    color: darken($accent-color, 10);
-  }
-}
-
+//   &:hover {
+//     color: darken($accent-color, 10);
+//   }
+// }
 
 main {
-    max-width: 1180px;
-    padding: $gutter;
-    margin: 0 auto;
-  
-    h1 + p {
-      @media (min-width: 900px) {
-        font-size: 2em;
-      }
+  max-width: 1180px;
+  padding: $gutter;
+  margin: 0 auto;
+
+  h1 + p {
+    @media (min-width: 900px) {
+      font-size: 2em;
     }
-  
   }
+}
 
 header {
   background-color: $accent-color;
@@ -88,23 +97,23 @@ header {
     }
   }
 
-  a {
-    color: $light;
-    text-decoration: none;
-    border-radius: $gutter / 4;
+  // a {
+  //   color: $light;
+  //   text-decoration: none;
+  //   border-radius: $gutter / 4;
 
-    padding: $gutter / 4;
+  //   padding: $gutter / 4;
 
-    &:visited {
-      color: $light;
-    }
-    &:hover,
-    &:visited:hover {
-      text-decoration: none;
-      background-color: $light;
-      color: $accent-color;
-    }
-  }
+  //   &:visited {
+  //     color: $light;
+  //   }
+  //   &:hover,
+  //   &:visited:hover {
+  //     text-decoration: none;
+  //     background-color: $light;
+  //     color: $accent-color;
+  //   }
+  // }
 
   nav {
     ul {
@@ -211,9 +220,7 @@ footer {
       a {
         color: $boring-grey;
       }
-
     }
-
   }
 
   .quarter-section {
@@ -229,7 +236,77 @@ footer {
       flex-basis: 100%;
     }
   }
+}
 
+#index-posts {
+  .post-card {
+    position: relative;
+    // color: white;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    padding: 40px 38px 45px;
+    .item-link-overlay{
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 26px;
+    }
+    .post-title {
+      // font-size: 1.75rem;
+      a {
+        // color: white;
+        color: $dark;
+        text-decoration: none;
+      }
+    }
+    .post-content {
+      color: $text-grey;
+      p {
+        font-weight: 600;
+      }
+    }
+    .post-tags {
+      text-transform: capitalize;
+      i.fas {
+        color: $accent-color;
+      }
+      .tag {
+        position: relative;
+        // margin-right: 5px;
+        color: $text-grey;
+        text-decoration: none;
+        z-index: 2;
+        padding: 4px 8px;
+        border-radius: 20px;
+        transition: all 0.2s ease;
+        &:hover {
+          color: $accent-color;
+          background-color: #fff;
+        }
+      }
+    }
+    .post-footer {
+      margin: 60px 0 0;
+      .read-more button {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        padding: 12px 32px;
+        transition: all .2s ease-out;
+        background: $accent-color;
+        border-radius: 4px;
+        border: none;
+        &:hover {
+          background:  darken($accent-color, 10%);          
+        }
+      }
+    }
+  }
 }
 
 // .site-name {

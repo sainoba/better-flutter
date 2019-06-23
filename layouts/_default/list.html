@@ -4,7 +4,24 @@
 <main>
     {{ partial "navigation/breadcrumbs.html" . }}
     {{ .Content }}
+    <section id="index-posts">
+        {{ $paginator := .Paginate (where .Data.Pages "Type" "ne" "page") (index .Site.Params "paginate" | default 7) }}
+        {{ range  where .Paginator.Pages "Type" "ne" "page" }}
+        {{ partial "li.html" . }}
+        {{ end }}
+        <nav class="w-third-l pb3 f6 center db" role="navigation">
+            {{- template "_internal/pagination.html" . -}}
+        </nav>
+    </section>
 </main>
+
+
+
+
+
+
+
+
 
 {{ partial "custom/footer.html" . }}
 {{ partial "structure/foot.html" . }}

@@ -6,11 +6,13 @@
     url('fonts/icomoon.svg?lg23q5#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 i {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  /* font-family: 'icomoon' !important; */
+  font-family: 'icomoon';
   speak: none;
   font-style: normal;
   font-weight: normal;

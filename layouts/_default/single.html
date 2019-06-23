@@ -6,7 +6,11 @@
     <h1 class="title">{{ .Title }}</h1>
     {{ .Content }}
 
-    {{ template "_internal/disqus.html" . }}
+    <amp-iframe width=600 height=140 layout="responsive"
+        sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms" resizable
+        src="https://comments.betterflutter.com/disqus_for_amp#{{.Site.DisqusShortname}}">
+        <div overflow tabindex=0 role=button aria-label="">Read more...</div>
+    </amp-iframe>
 
 </main>
 
